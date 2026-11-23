@@ -1,0 +1,47 @@
+# Build directories
+build/
+build-*/
+cmake-build-*/
+dist/
+AppDir/
+squashfs-root/
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Qt generated
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.qmlc
+.qmake.stash
+
+# AppImage tooling / outputs
+.appimage-tools/
+*.AppImage
+*.AppImage.zsync
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.kate-swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Compiled objects / binaries
+*.o
+*.obj
+*.so
+*.a
+quickjot
