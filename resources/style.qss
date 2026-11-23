@@ -1,0 +1,195 @@
+/* QuickJot — dark theme */
+
+QWidget {
+    background-color: #1a1d21;
+    color: #e6e8eb;
+    font-family: "Inter", "Noto Sans", "Segoe UI", "Cantarell", sans-serif;
+    font-size: 13px;
+}
+
+QMainWindow {
+    background-color: #1a1d21;
+}
+
+/* ---------- Editor panel ---------- */
+
+QLineEdit#titleEdit {
+    background-color: transparent;
+    border: none;
+    padding: 4px 2px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #f2f4f7;
+    selection-background-color: #3a7afe;
+    selection-color: #ffffff;
+}
+
+QPlainTextEdit#contentEdit {
+    background-color: transparent;
+    border: none;
+    padding: 4px 2px;
+    font-size: 14px;
+    color: #d5d9df;
+    selection-background-color: #3a7afe;
+    selection-color: #ffffff;
+}
+
+QLabel#statusLabel {
+    color: #6e7681;
+    font-size: 12px;
+    padding-right: 4px;
+}
+
+/* ---------- Search ---------- */
+
+QLineEdit#searchEdit {
+    background-color: #23272d;
+    border: 1px solid #2e343b;
+    border-radius: 6px;
+    padding: 7px 10px;
+    selection-background-color: #3a7afe;
+    selection-color: #ffffff;
+}
+
+QLineEdit#searchEdit:focus {
+    border: 1px solid #3a7afe;
+}
+
+/* ---------- Notes list ---------- */
+
+QListView#notesList {
+    background-color: #23272d;
+    border: 1px solid #2e343b;
+    border-radius: 6px;
+    outline: none;
+    padding: 4px;
+}
+
+QListView#notesList::item {
+    padding: 10px 12px;
+    margin: 2px 0;
+    border-radius: 4px;
+    color: #d5d9df;
+}
+
+QListView#notesList::item:hover {
+    background-color: #2b3138;
+}
+
+QListView#notesList::item:selected {
+    background-color: #3a7afe;
+    color: #ffffff;
+}
+
+/* ---------- Buttons ---------- */
+
+QPushButton {
+    background-color: #2e343b;
+    border: 1px solid #363d45;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-weight: 500;
+    color: #e6e8eb;
+}
+
+QPushButton:hover {
+    background-color: #363d45;
+}
+
+QPushButton:pressed {
+    background-color: #23272d;
+}
+
+QPushButton:disabled {
+    background-color: #1f2328;
+    color: #6e7681;
+    border-color: #262b31;
+}
+
+QPushButton#primaryButton {
+    background-color: #3a7afe;
+    border-color: #3a7afe;
+    color: #ffffff;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #4f8bff;
+}
+
+QPushButton#primaryButton:pressed {
+    background-color: #2f68d6;
+}
+
+/* ---------- Scrollbars ---------- */
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3a4049;
+    border-radius: 4px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4a525c;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+    background: transparent;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #3a4049;
+    border-radius: 4px;
+    min-width: 24px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #4a525c;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0;
+    background: transparent;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/* ---------- Misc ---------- */
+
+QSplitter::handle {
+    background-color: #23272d;
+}
+
+QMessageBox {
+    background-color: #1a1d21;
+}
+
+QToolTip {
+    background-color: #2b3138;
+    color: #e6e8eb;
+    border: 1px solid #3a4049;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
